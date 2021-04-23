@@ -18,4 +18,4 @@ def home(request):
 		response = requests.get(url)
 		data = response.json()
 		data=data['articles']
-	return render(request,'home.html',{'data':data})
+	return render(request,'index.html',{'data':data})
